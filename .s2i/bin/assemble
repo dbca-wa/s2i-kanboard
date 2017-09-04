@@ -1,0 +1,12 @@
+#!/bin/bash
+
+shopt -s dotglob
+echo "---> Downloading and installing kanboard"
+
+curl --silent -Lo kanboard.zip https://kanboard.net/kanboard-latest.zip
+unzip kanboard.zip
+mv kanboard/* ./; rmdir kanboard; rm kanboard.zip
+mv /tmp/src/config.php ./
+
+# Fix source directory permissions
+fix-permissions ./
