@@ -5,7 +5,7 @@
 /*******************************************************************/
 
 // Enable/Disable debug
-define('DEBUG', $_ENV['DEBUG'] ?? false;);
+define('DEBUG', $_ENV['DEBUG']);
 
 // Debug file path
 define('DEBUG_FILE', '/data/debug.log');
