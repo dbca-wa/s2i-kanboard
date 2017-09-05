@@ -51,7 +51,7 @@ define('DB_PORT', null);
 define('REVERSE_PROXY_AUTH', true);
 
 // Header name to use for the username
-define('REVERSE_PROXY_USER_HEADER', 'REMOTE_USER');
+define('REVERSE_PROXY_USER_HEADER', $_ENV['AUTH_HEADER']);
 
 // Username of the admin, by default blank
 define('REVERSE_PROXY_DEFAULT_ADMIN', $_ENV['DEFAULT_ADMIN']);
