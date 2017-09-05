@@ -11,7 +11,7 @@ define('DATA_DIR', $_ENV['DATA_DIR']);
 define('DEBUG', $_ENV['DEBUG']);
 
 // Available log drivers: syslog, stderr, stdout or file
-define('LOG_DRIVER', 'file');
+define('LOG_DRIVER', 'stderr');
 
 // Log filename if the log driver is "file"
 define('LOG_FILE', DATA_DIR.DIRECTORY_SEPARATOR.'debug.log');
